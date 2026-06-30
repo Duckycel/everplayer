@@ -2,6 +2,12 @@
 --noads
 https://vidfast.pro/movie/id
 https://player.videasy.net/movie/id
+https://www.vidking.net/embed/movie/id
+https://vidsrc-embed.ru/embed/movie/id
+https://primesrc.me/embed/movie?tmdb=id
+https://cinemaos.tech/player/id
+--ads
+https://multiembed.mov/?video_id=id&tmdb=1
 
 - anime
 --noads
@@ -11,3 +17,9 @@ https://megaplay.buzz/stream/mal/mal_id/e/t
 --noads
 https://vidfast.pro/tv/id/s/e
 https://player.videasy.net/tv/id/s/e
+https://www.vidking.net/embed/tv/id/s/e
+https://vidsrc-embed.ru/embed/tv?tmdb=id&season=s&episode=e
+https://primesrc.me/embed/tv?tmdb=id&season=s&episode=e
+https://cinemaos.tech/player/id/s/e
+--ads
+https://multiembed.mov/?video_id=id&tmdb=1&s=$s&e=$e
