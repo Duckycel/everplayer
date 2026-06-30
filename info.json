@@ -1,8 +1,8 @@
 {
   "parameter_translation_layer": {
     "_documentation": {
-      "purpose": "Maps the internal search engine boolean/string state to the exact query parameter key and expected value format for the target provider.",
-      "usage": "If engine.autoplay == true, lookup domain -> 'autoplay' -> append '?{key}={true_value}' to the URL."
+      "purpose": "Normalizes internal search engine boolean and UI string variables to exact parameter names and value assignments for endpoint matching.",
+      "handling": "Read global setting token state -> extract targeted domain map block -> generate string configuration output."
     },
     
     "player.videasy.net": {
@@ -32,6 +32,31 @@
       "subtitles": { "key": "sub", "true_value": "1" },
       "sub_lang": { "key": "sub_lang", "format": "iso_639_1" },
       "auto_next": { "key": "next", "true_value": "1" }
+    },
+
+    "player.cinezo.live": {
+      "autoplay": { "key": "autoplay", "true_value": "true", "false_value": "false" },
+      "poster": { "key": "poster", "true_value": "true", "false_value": "false" },
+      "chromecast": { "key": "chromecast", "true_value": "true", "false_value": "false" },
+      "server_selector": { "key": "servericon", "true_value": "true", "false_value": "false" },
+      "settings_panel": { "key": "setting", "true_value": "true", "false_value": "false" },
+      "pip_mode": { "key": "pip", "true_value": "true", "false_value": "false" },
+      "theme": { "key": "primarycolor", "format": "hex_no_hash" },
+      "background_color": { "key": "secondarycolor", "format": "hex_no_hash" },
+      "icon_color": { "key": "iconcolor", "format": "hex_no_hash" },
+      "font_family": { "key": "font", "format": "string_name" },
+      "font_color": { "key": "fontcolor", "format": "hex_no_hash" },
+      "font_size": { "key": "fontsize", "format": "integer_px" },
+      "font_opacity": { "key": "opacity", "format": "float_string" },
+      "branding_logo": { "key": "logourl", "format": "url_encoded" },
+      "force_server": { "key": "server", "format": "string_name" },
+      "audio_dub": { "key": "dub", "true_value": "true", "false_value": "false" }
+    },
+
+    "anyembed.com": {
+      "theme": { "key": "theme", "format": "string_name" },
+      "branding_logo": { "key": "logo", "true_value": "true", "false_value": "false" },
+      "force_provider": { "key": "provider", "format": "string_name" }
     },
 
     "vidking.net": {
@@ -76,6 +101,14 @@
       "sub_lang": { "key": "sub_lang", "format": "iso_639_1" }
     },
 
+    "player.vidzee.wtf": {
+      "autoplay": { "key": "autoplay", "true_value": "1" }
+    },
+
+    "111movies.net": {
+      "autoplay": { "key": "autoplay", "true_value": "1" }
+    },
+
     "vidup.to": {
       "autoplay": { "key": "autoplay", "true_value": "1" },
       "poster": { "key": "poster", "format": "url_encoded" },
@@ -117,15 +150,6 @@
       "subtitles": { "key": "sub", "true_value": "1" },
       "audio_dub": { "key": "dub", "true_value": "1", "false_value": "0" },
       "quality": { "key": "quality", "format": "resolution_string" }
-    },
-
-    "kaa.mx": {
-      "autoplay": { "key": "autoplay", "true_value": "1" },
-      "poster": { "key": "poster", "format": "url_encoded" },
-      "subtitles": { "key": "sub", "true_value": "1" },
-      "audio_dub": { "key": "dub", "true_value": "1", "false_value": "0" },
-      "quality": { "key": "quality", "format": "resolution_string" },
-      "auto_next": { "key": "next", "true_value": "1" }
     },
 
     "animepahe.com": {
