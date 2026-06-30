@@ -27,6 +27,22 @@
           "supported_parameters": ["autoplay", "color", "poster", "sub", "sub_lang", "next"]
         },
         {
+          "domain": "player.cinezo.live",
+          "tier": 1,
+          "max_quality": "1080p",
+          "customization": "high",
+          "url": "https://player.cinezo.live/embed/movie/^id^",
+          "supported_parameters": ["autoplay", "poster", "chromecast", "servericon", "setting", "pip", "primarycolor", "secondarycolor", "iconcolor", "font", "fontcolor", "fontsize", "opacity", "logourl", "server"]
+        },
+        {
+          "domain": "anyembed.com",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://anyembed.com/embed/tmdb-movie-^id^",
+          "supported_parameters": ["theme", "logo", "provider"]
+        },
+        {
           "domain": "vidking.net",
           "tier": 2,
           "max_quality": "1080p",
@@ -65,6 +81,14 @@
           "customization": "medium",
           "url": "https://1embed.cc/embed/movie/^id^",
           "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang"]
+        },
+        {
+          "domain": "player.vidzee.wtf",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://player.vidzee.wtf/embed/movie/^id^",
+          "supported_parameters": ["autoplay"]
         },
         {
           "domain": "vidsrc.me",
@@ -108,6 +132,14 @@
         }
       ],
       "ads": [
+        {
+          "domain": "111movies.net",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://111movies.net/movie/^id^",
+          "supported_parameters": ["autoplay"]
+        },
         {
           "domain": "multiembed.mov",
           "tier": 4,
@@ -185,6 +217,22 @@
           "supported_parameters": ["autoplay", "color", "poster", "sub", "sub_lang", "next"]
         },
         {
+          "domain": "player.cinezo.live",
+          "tier": 1,
+          "max_quality": "1080p",
+          "customization": "high",
+          "url": "https://player.cinezo.live/embed/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay", "poster", "chromecast", "servericon", "setting", "pip", "primarycolor", "secondarycolor", "iconcolor", "font", "fontcolor", "fontsize", "opacity", "logourl", "server"]
+        },
+        {
+          "domain": "anyembed.com",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://anyembed.com/embed/tmdb-tv-^id^-^s^-^e^",
+          "supported_parameters": ["theme", "logo", "provider"]
+        },
+        {
           "domain": "vidking.net",
           "tier": 2,
           "max_quality": "1080p",
@@ -223,6 +271,14 @@
           "customization": "medium",
           "url": "https://1embed.cc/embed/tv/^id^/^s^/^e^",
           "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang"]
+        },
+        {
+          "domain": "player.vidzee.wtf",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://player.vidzee.wtf/embed/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay"]
         },
         {
           "domain": "vidsrc.me",
@@ -266,6 +322,14 @@
         }
       ],
       "ads": [
+        {
+          "domain": "111movies.net",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://111movies.net/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay"]
+        },
         {
           "domain": "multiembed.mov",
           "tier": 4,
@@ -343,20 +407,21 @@
           "supported_parameters": ["autoplay", "theme", "poster", "sub", "dub", "quality", "skip"]
         },
         {
+          "domain": "player.cinezo.live",
+          "tier": 1,
+          "max_quality": "1080p",
+          "customization": "high",
+          "url": "https://player.cinezo.live/embed/anime/^id^/^e^",
+          "supported_parameters": ["autoplay", "poster", "chromecast", "servericon", "setting", "pip", "primarycolor", "secondarycolor", "iconcolor", "font", "fontcolor", "fontsize", "opacity", "logourl", "server", "dub"],
+          "notes": "Uses AniList ID payload natively mapping instead of MAL."
+        },
+        {
           "domain": "animetv.to",
           "tier": 2,
           "max_quality": "1080p",
           "customization": "medium",
           "url": "https://animetv.to/embed/mal/^id^/^e^",
           "supported_parameters": ["autoplay", "poster", "sub", "dub", "quality"]
-        },
-        {
-          "domain": "kaa.mx",
-          "tier": 2,
-          "max_quality": "1080p",
-          "customization": "medium",
-          "url": "https://kaa.mx/embed/mal/^id^/^e^",
-          "supported_parameters": ["autoplay", "poster", "sub", "dub", "quality", "next"]
         }
       ],
       "ads": [
