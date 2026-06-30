@@ -1,0 +1,40 @@
+{
+  "parameter_reference": {
+    "routing_variables": {
+      "^id^": "Core target system ID (TMDB/IMDB/Anilist).",
+      "^s^": "Season integer payload value.",
+      "^e^": "Episode or tracking count context integer value."
+    },
+    "query_definitions": {
+      "autoplay": { "value": [1, "true"], "description": "Forces direct video instantiation bypass." },
+      "theme": { "value": ["HEX", "string_name"], "description": "Color system modifications override." },
+      "poster": { "value": ["1", "true", "URL"], "description": "Toggles or sets splash image displays." },
+      "sub": { "value": [1, "true"], "description": "Forces subtitle rendering engine activation." },
+      "chromecast": { "value": ["true", "false"], "description": "Toggles Google Cast hardware capabilities integration." },
+      "pip": { "value": ["true", "false"], "description": "Enables Picture-In-Picture presentation modes." },
+      "logo": { "value": ["true", "false"], "description": "Toggles structural brand watermarks visibility." }
+    },
+    "service_support_matrix": {
+      "player.videasy.net": ["autoplay", "theme", "poster", "sub", "sub_lang", "muted", "next_ep"],
+      "vidfast.pro": ["autoplay", "color", "poster", "sub", "sub_lang", "quality", "next"],
+      "vidsrc-embed.ru": ["autoplay", "color", "poster", "sub", "sub_lang", "next"],
+      "player.cinezo.live": ["autoplay", "poster", "chromecast", "servericon", "setting", "pip", "primarycolor", "secondarycolor", "iconcolor", "font", "fontcolor", "fontsize", "opacity", "logourl", "server", "dub"],
+      "anyembed.com": ["theme", "logo", "provider"],
+      "vidking.net": ["autoplay", "theme", "poster", "sub", "sub_lang"],
+      "cinemaos.tech": ["autoplay", "theme", "poster", "sub", "sub_lang", "quality"],
+      "primesrc.me": ["autoplay", "theme", "poster", "sub", "sub_lang"],
+      "vaplayer.ru": ["autoplay", "color", "poster", "sub", "sub_lang", "quality"],
+      "1embed.cc": ["autoplay", "theme", "poster", "sub", "sub_lang"],
+      "player.vidzee.wtf": ["autoplay"],
+      "vidsrc.me": ["autoplay", "sub"],
+      "vidsrc.to": ["autoplay", "sub"],
+      "111movies.net": ["autoplay"],
+      "vidup.to": ["autoplay", "poster", "sub"],
+      "megaplay.buzz": ["autoplay", "theme", "poster", "sub", "dub", "quality", "skip_intro"],
+      "animez.to": ["autoplay", "color", "poster", "sub", "dub", "quality"],
+      "aniwave.to": ["autoplay", "theme", "poster", "sub", "dub", "quality", "skip"],
+      "animetv.to": ["autoplay", "poster", "sub", "dub", "quality"],
+      "animepahe.com": ["autoplay", "sub"]
+    }
+  }
+}
