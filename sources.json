@@ -1,0 +1,382 @@
+{
+  "search_engine_providers": {
+    "movies": {
+      "noads": [
+        {
+          "domain": "player.videasy.net",
+          "tier": 1,
+          "max_quality": "4K",
+          "customization": "high",
+          "url": "https://player.videasy.net/movie/^id^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang", "muted"]
+        },
+        {
+          "domain": "vidfast.pro",
+          "tier": 1,
+          "max_quality": "4K",
+          "customization": "high",
+          "url": "https://vidfast.pro/movie/^id^",
+          "supported_parameters": ["autoplay", "color", "poster", "sub", "sub_lang", "quality"]
+        },
+        {
+          "domain": "vidsrc-embed.ru",
+          "tier": 1,
+          "max_quality": "4K",
+          "customization": "high",
+          "url": "https://vidsrc-embed.ru/embed/movie?tmdb=^id^",
+          "supported_parameters": ["autoplay", "color", "poster", "sub", "sub_lang", "next"]
+        },
+        {
+          "domain": "vidking.net",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://www.vidking.net/embed/movie/^id^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang"]
+        },
+        {
+          "domain": "cinemaos.tech",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://cinemaos.tech/player/^id^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang", "quality"]
+        },
+        {
+          "domain": "primesrc.me",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://primesrc.me/embed/movie?tmdb=^id^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang"]
+        },
+        {
+          "domain": "vaplayer.ru",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://vaplayer.ru/embed/movie/^id^",
+          "supported_parameters": ["autoplay", "color", "poster", "sub", "sub_lang", "quality"]
+        },
+        {
+          "domain": "1embed.cc",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://1embed.cc/embed/movie/^id^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang"]
+        },
+        {
+          "domain": "vidsrc.me",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "low",
+          "url": "https://vidsrc.me/embed/movie?tmdb=^id^",
+          "supported_parameters": ["autoplay", "sub"]
+        },
+        {
+          "domain": "vidsrc.to",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "low",
+          "url": "https://vidsrc.to/embed/movie/^id^",
+          "supported_parameters": ["autoplay", "sub"]
+        },
+        {
+          "domain": "vidapi.xyz",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "low",
+          "url": "https://vidapi.xyz/embed/movie?tmdb=^id^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "vidlink.pro",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "low",
+          "url": "https://vidlink.pro/movie/^id^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "vidup.to",
+          "tier": 3,
+          "max_quality": "720p",
+          "customization": "low",
+          "url": "https://vidup.to/movie/^id^",
+          "supported_parameters": ["autoplay", "poster", "sub"]
+        }
+      ],
+      "ads": [
+        {
+          "domain": "multiembed.mov",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://multiembed.mov/?video_id=^id^&tmdb=1",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "superembed.stream",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://superembed.stream/movie/^id^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "2embed.cc",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://2embed.cc/embed/^id^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "autoembed.to",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://autoembed.to/movie/tmdb/^id^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "whvx.net",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://whvx.net/movie/^id^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "warezcdn.link",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://warezcdn.link/embed/movie/^id^",
+          "supported_parameters": ["autoplay"]
+        }
+      ]
+    },
+    "series": {
+      "noads": [
+        {
+          "domain": "player.videasy.net",
+          "tier": 1,
+          "max_quality": "4K",
+          "customization": "high",
+          "url": "https://player.videasy.net/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang", "muted", "next_ep"]
+        },
+        {
+          "domain": "vidfast.pro",
+          "tier": 1,
+          "max_quality": "4K",
+          "customization": "high",
+          "url": "https://vidfast.pro/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay", "color", "poster", "sub", "sub_lang", "quality", "next"]
+        },
+        {
+          "domain": "vidsrc-embed.ru",
+          "tier": 1,
+          "max_quality": "4K",
+          "customization": "high",
+          "url": "https://vidsrc-embed.ru/embed/tv?tmdb=^id^&season=^s^&episode=^e^",
+          "supported_parameters": ["autoplay", "color", "poster", "sub", "sub_lang", "next"]
+        },
+        {
+          "domain": "vidking.net",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://www.vidking.net/embed/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang"]
+        },
+        {
+          "domain": "cinemaos.tech",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://cinemaos.tech/player/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang", "quality"]
+        },
+        {
+          "domain": "primesrc.me",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://primesrc.me/embed/tv?tmdb=^id^&season=^s^&episode=^e^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang"]
+        },
+        {
+          "domain": "vaplayer.ru",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://vaplayer.ru/embed/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay", "color", "poster", "sub", "sub_lang", "quality"]
+        },
+        {
+          "domain": "1embed.cc",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://1embed.cc/embed/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang"]
+        },
+        {
+          "domain": "vidsrc.me",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "low",
+          "url": "https://vidsrc.me/embed/tv?tmdb=^id^&season=^s^&episode=^e^",
+          "supported_parameters": ["autoplay", "sub"]
+        },
+        {
+          "domain": "vidsrc.to",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "low",
+          "url": "https://vidsrc.to/embed/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay", "sub"]
+        },
+        {
+          "domain": "vidapi.xyz",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "low",
+          "url": "https://vidapi.xyz/embed/tv?tmdb=^id^&season=^s^&episode=^e^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "vidlink.pro",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "low",
+          "url": "https://vidlink.pro/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "vidup.to",
+          "tier": 3,
+          "max_quality": "720p",
+          "customization": "low",
+          "url": "https://vidup.to/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay", "poster", "sub"]
+        }
+      ],
+      "ads": [
+        {
+          "domain": "multiembed.mov",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://multiembed.mov/?video_id=^id^&tmdb=1&s=^s^&e=^e^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "superembed.stream",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://superembed.stream/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "2embed.cc",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://2embed.cc/embed/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "autoembed.to",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://autoembed.to/tv/tmdb/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "whvx.net",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://whvx.net/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay"]
+        },
+        {
+          "domain": "warezcdn.link",
+          "tier": 4,
+          "max_quality": "1080p",
+          "customization": "minimal",
+          "url": "https://warezcdn.link/embed/tv/^id^/^s^/^e^",
+          "supported_parameters": ["autoplay"]
+        }
+      ]
+    },
+    "anime": {
+      "noads": [
+        {
+          "domain": "megaplay.buzz",
+          "tier": 1,
+          "max_quality": "1080p",
+          "customization": "high",
+          "url": "https://megaplay.buzz/stream/mal/^id^/^e^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "dub", "quality", "skip_intro"]
+        },
+        {
+          "domain": "animez.to",
+          "tier": 1,
+          "max_quality": "1080p",
+          "customization": "high",
+          "url": "https://animez.to/embed/mal/^id^/^e^",
+          "supported_parameters": ["autoplay", "color", "poster", "sub", "dub", "quality"]
+        },
+        {
+          "domain": "aniwave.to",
+          "tier": 1,
+          "max_quality": "1080p",
+          "customization": "high",
+          "url": "https://aniwave.to/embed/mal/^id^/^e^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "dub", "quality", "skip"]
+        },
+        {
+          "domain": "animetv.to",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://animetv.to/embed/mal/^id^/^e^",
+          "supported_parameters": ["autoplay", "poster", "sub", "dub", "quality"]
+        },
+        {
+          "domain": "kaa.mx",
+          "tier": 2,
+          "max_quality": "1080p",
+          "customization": "medium",
+          "url": "https://kaa.mx/embed/mal/^id^/^e^",
+          "supported_parameters": ["autoplay", "poster", "sub", "dub", "quality", "next"]
+        }
+      ],
+      "ads": [
+        {
+          "domain": "animepahe.com",
+          "tier": 4,
+          "max_quality": "720p",
+          "customization": "low",
+          "url": "https://animepahe.com/embed/^id^/^e^",
+          "supported_parameters": ["autoplay", "sub"]
+        },
+        {
+          "domain": "animefreak.tv",
+          "tier": 5,
+          "max_quality": "720p",
+          "customization": "none",
+          "url": "https://animefreak.tv/embed/^id^/^e^",
+          "supported_parameters": []
+        }
+      ]
+    }
+  }
+}
