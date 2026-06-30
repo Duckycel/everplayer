@@ -1,134 +1,140 @@
 {
-  "parameter_translation_engine": {
-    "global_value_formatting": {
-      "booleans": {
-        "engine_state": [true, false],
-        "url_output": ["1", "0"],
-        "applies_to": ["engine_autoplay", "engine_subs", "engine_dub", "engine_muted", "engine_autonext", "engine_skip_intro"]
-      },
-      "colors": {
-        "engine_state": "#ff0000",
-        "url_output": "ff0000",
-        "action": "strip_hash_symbol",
-        "applies_to": ["engine_theme"]
-      }
+  "parameter_translation_layer": {
+    "_documentation": {
+      "purpose": "Maps the internal search engine boolean/string state to the exact query parameter key and expected value format for the target provider.",
+      "usage": "If engine.autoplay == true, lookup domain -> 'autoplay' -> append '?{key}={true_value}' to the URL."
     },
-    "provider_syntax_maps": {
-      "player.videasy.net": {
-        "delimiters": {
-          "first_param": "?",
-          "chained_param": "&"
-        },
-        "key_translations": {
-          "engine_autoplay": "autoplay",
-          "engine_theme": "theme",
-          "engine_poster": "poster",
-          "engine_subs": "sub",
-          "engine_sub_lang": "sub_lang",
-          "engine_muted": "muted",
-          "engine_autonext": "next_ep"
-        }
-      },
-      "vidfast.pro": {
-        "delimiters": {
-          "first_param": "?",
-          "chained_param": "&"
-        },
-        "key_translations": {
-          "engine_autoplay": "autoplay",
-          "engine_theme": "color",
-          "engine_poster": "poster",
-          "engine_subs": "sub",
-          "engine_sub_lang": "sub_lang",
-          "engine_quality": "quality",
-          "engine_autonext": "next"
-        }
-      },
-      "vidsrc-embed.ru": {
-        "notes": "first_param is '&' because the base URL uses ?tmdb=^id^",
-        "delimiters": {
-          "first_param": "&",
-          "chained_param": "&"
-        },
-        "key_translations": {
-          "engine_autoplay": "autoplay",
-          "engine_theme": "color",
-          "engine_poster": "poster",
-          "engine_subs": "sub",
-          "engine_sub_lang": "sub_lang",
-          "engine_autonext": "next"
-        }
-      },
-      "primesrc.me": {
-        "notes": "first_param is '&' because the base URL uses ?tmdb=^id^",
-        "delimiters": {
-          "first_param": "&",
-          "chained_param": "&"
-        },
-        "key_translations": {
-          "engine_autoplay": "autoplay",
-          "engine_theme": "theme",
-          "engine_poster": "poster",
-          "engine_subs": "sub",
-          "engine_sub_lang": "sub_lang"
-        }
-      },
-      "megaplay.buzz": {
-        "delimiters": {
-          "first_param": "?",
-          "chained_param": "&"
-        },
-        "key_translations": {
-          "engine_autoplay": "autoplay",
-          "engine_theme": "theme",
-          "engine_poster": "poster",
-          "engine_subs": "sub",
-          "engine_dub": "dub",
-          "engine_quality": "quality",
-          "engine_skip_intro": "skip_intro"
-        }
-      },
-      "aniwave.to": {
-        "delimiters": {
-          "first_param": "?",
-          "chained_param": "&"
-        },
-        "key_translations": {
-          "engine_autoplay": "autoplay",
-          "engine_theme": "theme",
-          "engine_poster": "poster",
-          "engine_subs": "sub",
-          "engine_dub": "dub",
-          "engine_quality": "quality",
-          "engine_skip_intro": "skip"
-        }
-      },
-      "multiembed.mov": {
-        "notes": "first_param is '&' because the base URL uses ?video_id=^id^",
-        "delimiters": {
-          "first_param": "&",
-          "chained_param": "&"
-        },
-        "key_translations": {
-          "engine_autoplay": "autoplay"
-        }
-      },
-      "default_fallback_map": {
-        "notes": "Use this layout for cinemaos, vaplayer, 1embed, vidking, etc.",
-        "delimiters": {
-          "first_param": "?",
-          "chained_param": "&"
-        },
-        "key_translations": {
-          "engine_autoplay": "autoplay",
-          "engine_theme": "theme",
-          "engine_poster": "poster",
-          "engine_subs": "sub",
-          "engine_sub_lang": "sub_lang",
-          "engine_dub": "dub",
-          "engine_quality": "quality"
-        }
-      }
+    
+    "player.videasy.net": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "theme", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "sub_lang": { "key": "sub_lang", "format": "iso_639_1" },
+      "muted": { "key": "muted", "true_value": "1" },
+      "auto_next": { "key": "next_ep", "true_value": "1" }
+    },
+    
+    "vidfast.pro": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "color", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "sub_lang": { "key": "sub_lang", "format": "iso_639_1" },
+      "quality": { "key": "quality", "format": "resolution_string" },
+      "auto_next": { "key": "next", "true_value": "1" }
+    },
+    
+    "vidsrc-embed.ru": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "color", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "sub_lang": { "key": "sub_lang", "format": "iso_639_1" },
+      "auto_next": { "key": "next", "true_value": "1" }
+    },
+
+    "vidking.net": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "theme", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "sub_lang": { "key": "sub_lang", "format": "iso_639_1" }
+    },
+
+    "cinemaos.tech": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "theme", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "sub_lang": { "key": "sub_lang", "format": "iso_639_1" },
+      "quality": { "key": "quality", "format": "resolution_string" }
+    },
+
+    "primesrc.me": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "theme", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "sub_lang": { "key": "sub_lang", "format": "iso_639_1" }
+    },
+
+    "vaplayer.ru": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "color", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "sub_lang": { "key": "sub_lang", "format": "iso_639_1" },
+      "quality": { "key": "quality", "format": "resolution_string" }
+    },
+
+    "1embed.cc": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "theme", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "sub_lang": { "key": "sub_lang", "format": "iso_639_1" }
+    },
+
+    "vidup.to": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" }
+    },
+
+    "megaplay.buzz": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "theme", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "audio_dub": { "key": "dub", "true_value": "1", "false_value": "0" },
+      "quality": { "key": "quality", "format": "resolution_string" },
+      "skip_intro": { "key": "skip_intro", "true_value": "1" }
+    },
+
+    "animez.to": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "color", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "audio_dub": { "key": "dub", "true_value": "1", "false_value": "0" },
+      "quality": { "key": "quality", "format": "resolution_string" }
+    },
+
+    "aniwave.to": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "theme": { "key": "theme", "format": "hex_no_hash" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "audio_dub": { "key": "dub", "true_value": "1", "false_value": "0" },
+      "quality": { "key": "quality", "format": "resolution_string" },
+      "skip_intro": { "key": "skip", "true_value": "1" }
+    },
+
+    "animetv.to": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "audio_dub": { "key": "dub", "true_value": "1", "false_value": "0" },
+      "quality": { "key": "quality", "format": "resolution_string" }
+    },
+
+    "kaa.mx": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "poster": { "key": "poster", "format": "url_encoded" },
+      "subtitles": { "key": "sub", "true_value": "1" },
+      "audio_dub": { "key": "dub", "true_value": "1", "false_value": "0" },
+      "quality": { "key": "quality", "format": "resolution_string" },
+      "auto_next": { "key": "next", "true_value": "1" }
+    },
+
+    "animepahe.com": {
+      "autoplay": { "key": "autoplay", "true_value": "1" },
+      "subtitles": { "key": "sub", "true_value": "1" }
+    },
+
+    "standard_aggregators_fallback": {
+      "autoplay": { "key": "autoplay", "true_value": "1" }
     }
   }
 }
