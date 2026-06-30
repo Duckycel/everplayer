@@ -3,14 +3,6 @@
     "movies": {
       "noads": [
         {
-          "domain": "player.videasy.net",
-          "tier": 1,
-          "max_quality": "4K",
-          "customization": "high",
-          "url": "https://player.videasy.net/movie/^id^",
-          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang", "muted"]
-        },
-        {
           "domain": "vidfast.pro",
           "tier": 1,
           "max_quality": "4K",
@@ -425,6 +417,14 @@
         }
       ],
       "ads": [
+         {
+          "domain": "player.videasy.net",
+          "tier": 4,
+          "max_quality": "4K",
+          "customization": "high",
+          "url": "https://player.videasy.net/movie/^id^",
+          "supported_parameters": ["autoplay", "theme", "poster", "sub", "sub_lang", "muted"]
+        },
         {
           "domain": "animepahe.com",
           "tier": 4,
