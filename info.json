@@ -1,0 +1,134 @@
+{
+  "parameter_translation_engine": {
+    "global_value_formatting": {
+      "booleans": {
+        "engine_state": [true, false],
+        "url_output": ["1", "0"],
+        "applies_to": ["engine_autoplay", "engine_subs", "engine_dub", "engine_muted", "engine_autonext", "engine_skip_intro"]
+      },
+      "colors": {
+        "engine_state": "#ff0000",
+        "url_output": "ff0000",
+        "action": "strip_hash_symbol",
+        "applies_to": ["engine_theme"]
+      }
+    },
+    "provider_syntax_maps": {
+      "player.videasy.net": {
+        "delimiters": {
+          "first_param": "?",
+          "chained_param": "&"
+        },
+        "key_translations": {
+          "engine_autoplay": "autoplay",
+          "engine_theme": "theme",
+          "engine_poster": "poster",
+          "engine_subs": "sub",
+          "engine_sub_lang": "sub_lang",
+          "engine_muted": "muted",
+          "engine_autonext": "next_ep"
+        }
+      },
+      "vidfast.pro": {
+        "delimiters": {
+          "first_param": "?",
+          "chained_param": "&"
+        },
+        "key_translations": {
+          "engine_autoplay": "autoplay",
+          "engine_theme": "color",
+          "engine_poster": "poster",
+          "engine_subs": "sub",
+          "engine_sub_lang": "sub_lang",
+          "engine_quality": "quality",
+          "engine_autonext": "next"
+        }
+      },
+      "vidsrc-embed.ru": {
+        "notes": "first_param is '&' because the base URL uses ?tmdb=^id^",
+        "delimiters": {
+          "first_param": "&",
+          "chained_param": "&"
+        },
+        "key_translations": {
+          "engine_autoplay": "autoplay",
+          "engine_theme": "color",
+          "engine_poster": "poster",
+          "engine_subs": "sub",
+          "engine_sub_lang": "sub_lang",
+          "engine_autonext": "next"
+        }
+      },
+      "primesrc.me": {
+        "notes": "first_param is '&' because the base URL uses ?tmdb=^id^",
+        "delimiters": {
+          "first_param": "&",
+          "chained_param": "&"
+        },
+        "key_translations": {
+          "engine_autoplay": "autoplay",
+          "engine_theme": "theme",
+          "engine_poster": "poster",
+          "engine_subs": "sub",
+          "engine_sub_lang": "sub_lang"
+        }
+      },
+      "megaplay.buzz": {
+        "delimiters": {
+          "first_param": "?",
+          "chained_param": "&"
+        },
+        "key_translations": {
+          "engine_autoplay": "autoplay",
+          "engine_theme": "theme",
+          "engine_poster": "poster",
+          "engine_subs": "sub",
+          "engine_dub": "dub",
+          "engine_quality": "quality",
+          "engine_skip_intro": "skip_intro"
+        }
+      },
+      "aniwave.to": {
+        "delimiters": {
+          "first_param": "?",
+          "chained_param": "&"
+        },
+        "key_translations": {
+          "engine_autoplay": "autoplay",
+          "engine_theme": "theme",
+          "engine_poster": "poster",
+          "engine_subs": "sub",
+          "engine_dub": "dub",
+          "engine_quality": "quality",
+          "engine_skip_intro": "skip"
+        }
+      },
+      "multiembed.mov": {
+        "notes": "first_param is '&' because the base URL uses ?video_id=^id^",
+        "delimiters": {
+          "first_param": "&",
+          "chained_param": "&"
+        },
+        "key_translations": {
+          "engine_autoplay": "autoplay"
+        }
+      },
+      "default_fallback_map": {
+        "notes": "Use this layout for cinemaos, vaplayer, 1embed, vidking, etc.",
+        "delimiters": {
+          "first_param": "?",
+          "chained_param": "&"
+        },
+        "key_translations": {
+          "engine_autoplay": "autoplay",
+          "engine_theme": "theme",
+          "engine_poster": "poster",
+          "engine_subs": "sub",
+          "engine_sub_lang": "sub_lang",
+          "engine_dub": "dub",
+          "engine_quality": "quality"
+        }
+      }
+    }
+  }
+}
