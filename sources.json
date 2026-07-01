@@ -3,14 +3,6 @@
     "movies": {
       "noads": [
         {
-          "domain": "vidfast.pro",
-          "tier": 1,
-          "max_quality": "4K",
-          "customization": "high",
-          "url": "https://vidfast.pro/movie/^id^",
-          "supported_parameters": ["autoplay", "color", "poster", "sub", "sub_lang", "quality"]
-        },
-        {
           "domain": "vidsrc-embed.ru",
           "tier": 1,
           "max_quality": "4K",
@@ -314,6 +306,14 @@
         }
       ],
       "ads": [
+         {
+          "domain": "vidfast.pro",
+          "tier": 4,
+          "max_quality": "4K",
+          "customization": "high",
+          "url": "https://vidfast.pro/movie/^id^",
+          "supported_parameters": ["autoplay", "color", "poster", "sub", "sub_lang", "quality"]
+        },
         {
           "domain": "111movies.net",
           "tier": 4,
